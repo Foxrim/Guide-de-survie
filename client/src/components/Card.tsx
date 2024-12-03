@@ -1,13 +1,20 @@
 import "./Card.css";
 
-export default function Card() {
+interface CardProps {
+  src: string;
+  title: string;
+  key: number;
+}
+
+export default function Card(Props: CardProps) {
+  const { src, title, key } = Props;
   return (
-    <div className="cardContainer">
+    <div className="cardContainer" key={key}>
       <figure>
-        <img src="#" alt="#" />
+        <img src={src} alt={title} />
       </figure>
       <div>
-        <h3>Nourriture</h3>
+        <h3>{title}</h3>
       </div>
     </div>
   );
