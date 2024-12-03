@@ -1,0 +1,57 @@
+@import "../root.css";
+
+:root {
+  --Size-SeparateurHomeMain: 5px;
+}
+.HomeMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.PageHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageHome > h2 {
+  color: var(--primary-color-font);
+}
+
+.SeparateurHomeMain {
+  width: 100%;
+  height: var(--Size-SeparateurHomeMain);
+  background-color: var(--secondary-color-font);
+}
+
+.ContainerCardAbrisMain {
+  background-color: var(--quatertiary-background-color);
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.cardBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+
+  .cardContainer {
+    height: 90%;
+    width: 90%;
+    background-color: var(--secondary-background-color);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 8px var(--secondary-color-font);
+    padding: 1rem;
+    color: var(--secondary-color-font);
+
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
