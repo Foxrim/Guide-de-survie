@@ -10,6 +10,13 @@ body {
   line-height: 1.7;
   margin: 0;
 }
+
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 :root {
   --primary-color-font: #742d00;
   --secondary-color-font: #a03e00;

@@ -1,5 +1,19 @@
+import Header from "../components/Header";
+import HomeMain from "../components/HomeMain";
+import "./Home.css";
+
 function Home() {
-  return <h1>Je suis le composant Home</h1>;
+  return (
+    <>
+      <header>
+        <Header />
+      </header>
+
+      <main className="PageHomeMain">
+        <HomeMain />
+      </main>
+    </>
+  );
 }
 
 export default Home;
