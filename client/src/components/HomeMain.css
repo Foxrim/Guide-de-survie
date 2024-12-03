@@ -24,8 +24,22 @@
   background-color: var(--secondary-color-font);
 }
 
-.ContainerCardHomeMain {
+.ContainerHomeMain {
+  display: flex;
+  justify-content: center;
+  align-items: start;
   background-color: var(--quatertiary-background-color);
   width: 100%;
   height: 90vh;
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.ContainerCardHomeMain {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0;
 }
