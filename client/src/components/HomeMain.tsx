@@ -1,8 +1,16 @@
+import "./HomeMain.css";
+
 function HomeMain() {
   return (
-    <>
-      <h1>Je suis le composant HomeMain</h1>;
-    </>
+    <section className="HomeMain">
+      <div className="PageHome">
+        <h2>Home</h2>
+      </div>
+
+      <div className="SeparateurHomeMain" />
+
+      <div className="ContainerCardHomeMain" />
+    </section>
   );
 }
 
