@@ -37,7 +37,7 @@ function HomeMain() {
     {
       src: outils,
       title: "Outils",
-      link: "#",
+      link: "/home/outils",
       key: 5,
     },
   ];

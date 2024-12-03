@@ -1,17 +1,17 @@
-import "./Outils.css";
+import "./OutilsMain.css";
 
-export default function Abris() {
+function OutilsMain() {
   return (
-    <section className="HomeMain">
-      <div className="PageHome">
+    <section className="OutilsMain">
+      <div className="PageOutils">
         <h2>Outils</h2>
       </div>
 
-      <div className="SeparateurHomeMain" />
+      <div className="SeparateurOutilsPage" />
 
-      <div className="ContainerCardAbrisMain">
-        <section className="cardBack">
-          <div className="cardContainer">
+      <div className="ContainerCardOutilsMain">
+        <section className="cardBackOutils">
+          <div className="cardContainerOutils">
             <h4>Couteau de survie : </h4>
             <p>
               Un couteau de survie est l’un des outils les plus polyvalents et
@@ -111,3 +111,5 @@ export default function Abris() {
     </section>
   );
 }
+
+export default OutilsMain;
