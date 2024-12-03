@@ -20,10 +20,14 @@ const app = express();
 
 import cors from "cors";
 
+import data from "../datas/data.json";
+
 if (process.env.CLIENT_URL != null) {
   app.use(cors({ origin: [process.env.CLIENT_URL] }));
 }
-
+app.get("/api", (req, res) => {
+  res.json(data);
+});
 // If you need to allow extra origins, you can add something like this:
 
 /*
@@ -80,25 +84,23 @@ import path from "node:path";
 
 // Serve server resources
 
-const publicFolderPath = path.join(__dirname, "../../server/public");
+// const publicFolderPath = path.join(__dirname, "../../server/public");
 
-if (fs.existsSync(publicFolderPath)) {
-  app.use(express.static(publicFolderPath));
-}
+// -
 
 // Serve client resources
 
-const clientBuildPath = path.join(__dirname, "../../client/dist");
+// const clientBuildPath = path.join(__dirname, "../../client/dist");
 
-if (fs.existsSync(clientBuildPath)) {
-  app.use(express.static(clientBuildPath));
+// if (fs.existsSync(clientBuildPath)) {
+// 	app.use(express.static(clientBuildPath));
 
-  // Redirect unhandled requests to the client index file
+// 	// Redirect unhandled requests to the client index file
 
-  app.get("*", (_, res) => {
-    res.sendFile("index.html", { root: clientBuildPath });
-  });
-}
+// 	app.get("*", (_, res) => {
+// 		res.sendFile("index.html", { root: clientBuildPath });
+// 	});
+// }
 
 /* ************************************************************************* */
 
