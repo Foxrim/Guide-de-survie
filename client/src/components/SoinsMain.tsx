@@ -7,7 +7,7 @@ function SoinsMain() {
         <h2>Soins</h2>
       </div>
 
-      <div className="SeparateurHomeMain" />
+      <div className="SeparateurSoinsPage" />
 
       <div className="ContainerCardSoinsMain">
         <section className="cardBackSoins">

@@ -1,8 +1,5 @@
 @import "../root.css";
 
-:root {
-  --Size-SeparateurHomeMain: 5px;
-}
 .SoinsMain {
   display: flex;
   flex-direction: column;
@@ -14,20 +11,20 @@
   align-items: center;
 }
 
-.PageHome > h2 {
+.PageSoins > h2 {
   color: var(--primary-color-font);
 }
 
-.SeparateurHomeMain {
+.SeparateurSoinsPage {
   width: 100%;
   height: var(--Size-SeparateurHomeMain);
   background-color: var(--secondary-color-font);
 }
-/*A modifier dans le fichier tsx*/
+
 .ContainerCardSoinsMain {
   background-color: var(--quatertiary-background-color);
   height: 100%;
-  width: 100%;
+  width: auto;
   padding: 1.5rem 0;
 }
 

@@ -6,8 +6,10 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 /* ************************************************************************* */
 
 import App from "./App";
+import Outils from "./components/Outils";
 import AbrisPage from "./pages/AbrisPage";
 import Home from "./pages/Home";
+import Nourriture from "./pages/Nourriture";
 import SoinsPage from "./pages/SoinsPage";
 
 /* ************************************************************************* */
@@ -25,8 +27,20 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "/home/nourriture",
+        element: <Nourriture />,
+      },
+      {
         path: "/home/abris",
         element: <AbrisPage />,
+      },
+      {
+        path: "/home/outils",
+        element: <Outils />,
+      },
+      {
+        path: "/home/outils",
+        element: <Outils />,
       },
       {
         path: "/home/soins",
