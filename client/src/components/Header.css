@@ -1,0 +1,62 @@
+@import "../root.css";
+
+:root {
+  --Size-SeparateurHeader: 2px;
+}
+
+.Header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-background-color);
+}
+
+.Nav {
+  display: grid;
+  grid-template-columns: 0.5fr var(--Size-SeparateurHeader) 2fr var(
+      --Size-SeparateurHeader
+    );
+  width: 80%;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  justify-content: end;
+  align-items: end;
+  background-color: var(--secondary-background-color);
+}
+
+/*---------------------------------------*/
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo > a {
+  text-decoration: none;
+}
+
+.Logo > a > h3 {
+  color: var(--primary-color-font);
+  text-decoration: underline;
+}
+
+/*----------------------------------------*/
+
+.SeparateurHeader {
+  background-color: var(--primary-color-font);
+  width: var(--Size-SeparateurHeader);
+  height: 90%;
+  border-radius: 1rem;
+}
+
+.ContainerSlogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color-font);
+  margin: 0rem 0rem 0rem 1rem;
+}
+
+/*-------------------------------------------------*/

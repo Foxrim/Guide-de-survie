@@ -1,7 +1,16 @@
+import Header from "../components/Header";
+import HomeMain from "../components/HomeMain";
+
 function Home() {
   return (
     <>
-      <h1>Je suis le composant Home</h1>;
+      <header>
+        <Header />
+      </header>
+
+      <main>
+        <HomeMain />
+      </main>
     </>
   );
 }
