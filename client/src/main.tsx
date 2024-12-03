@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import Home from "./pages/Home";
+import PageNourriture from "./pages/PageNourriture";
 
 /* ************************************************************************* */
 
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "/home/pagenourriture",
+        element: <PageNourriture />,
       },
     ],
   },
