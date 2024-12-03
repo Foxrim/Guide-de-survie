@@ -1,17 +1,17 @@
-import "./Abris.css";
+import "./AbrisMain.css";
 
-export default function Abris() {
+function AbrisMain() {
   return (
-    <section className="HomeMain">
-      <div className="PageHome">
+    <section className="AbrisMain">
+      <div className="PageAbris">
         <h2>Abris</h2>
       </div>
 
-      <div className="SeparateurHomeMain" />
+      <div className="SeparateurAbrisPage" />
 
-      <div className="ContainerCardAbrisMain">
-        <section className="cardBack">
-          <div className="cardContainer">
+      <section className="ContainerCardAbrisMain">
+        <section className="cardBackAbris">
+          <div className="cardContainerAbris">
             <h4>Abris Naturel : </h4>
             <p>
               Utilise les éléments naturels environnants comme des grottes, des
@@ -62,7 +62,9 @@ export default function Abris() {
             </p>
           </div>
         </section>
-      </div>
+      </section>
     </section>
   );
 }
+
+export default AbrisMain;

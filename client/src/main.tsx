@@ -25,11 +25,11 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/abris",
+        path: "/home/abris",
         element: <AbrisPage />,
       },
       {
-        path: "/soins",
+        path: "/home/soins",
         element: <SoinsPage />,
       },
     ],

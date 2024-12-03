@@ -1,17 +1,17 @@
-import "./Soins.css";
+import "./SoinsMain.css";
 
-export default function Soins() {
+function SoinsMain() {
   return (
-    <section className="HomeMain">
-      <div className="PageHome">
+    <section className="SoinsMain">
+      <div className="PageSoins">
         <h2>Soins</h2>
       </div>
 
       <div className="SeparateurHomeMain" />
 
-      <div className="ContainerCardAbrisMain">
-        <section className="cardBack">
-          <div className="cardContainer">
+      <div className="ContainerCardSoinsMain">
+        <section className="cardBackSoins">
+          <div className="cardContainerSoins">
             <h4>
               Traitement des blessures superficielles (coupures, éraflures)
             </h4>
@@ -75,3 +75,5 @@ export default function Soins() {
     </section>
   );
 }
+
+export default SoinsMain;

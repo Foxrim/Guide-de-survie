@@ -1,17 +1,19 @@
 import Header from "../components/Header";
-import Soins from "../components/Soins";
+import SoinsMain from "../components/SoinsMain";
 import "./Home.css";
 
-export default function SoinsPage() {
+function SoinsPage() {
   return (
     <>
       <header>
         <Header />
       </header>
 
-      <main className="PageHomeMain">
-        <Soins />
+      <main className="PageSoinsMain">
+        <SoinsMain />
       </main>
     </>
   );
 }
+
+export default SoinsPage;
