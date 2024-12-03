@@ -732,6 +732,8 @@
           "Offrir un abri temporaire contre les intempéries (pluie, vent, froid)",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac de transport, à l'abri de l'humidité",
+        image:
+          "https://img.freepik.com/vecteurs-libre/illustration-classique-tente-camping_1308-162447.jpg?t=st=1733241019~exp=1733244619~hmac=57cc11b82b407df034800922dd2deba2c199aeb06459923e7c78c6e3385dcb45&w=1380",
       },
       {
         id: 2,
@@ -741,6 +743,8 @@
           "Conserver la chaleur corporelle en cas de froid intense, peut être utilisée comme abri d'urgence",
         quantite_eau_necessaire: "Aucune",
         stockage: "Rangé dans un petit sac étanche",
+        image:
+          "https://img.freepik.com/photos-gratuite/fille-africaine-est-enveloppee-dans-film-protecteur-chaud-gars-aident-femme-fournir-premiers-soins-dans-parc_1157-40377.jpg?t=st=1733241053~exp=1733244653~hmac=3f808c31e6ea713847d03c0bdf60d402147554253b1b702bd017431a18bc78f3&w=1380",
       },
       {
         id: 3,
@@ -750,6 +754,8 @@
           "Créer un abri temporaire ou protéger du soleil, de la pluie et du vent",
         quantite_eau_necessaire: "Aucune",
         stockage: "Roulé et rangé dans un sac étanche ou compact",
+        image:
+          "https://img.freepik.com/vecteurs-libre/parapluie-haut-bas_78370-1011.jpg?t=st=1733241089~exp=1733244689~hmac=0ef6294b0726e5ebe3b94747da3e0b9c260f4d77deb6c6f16ac412b506936c34&w=1380",
       },
       {
         id: 4,
@@ -759,6 +765,8 @@
           "Couverture de sol, abri improvisé, protection contre les intempéries",
         quantite_eau_necessaire: "Aucune",
         stockage: "Enroulé et rangé dans un sac étanche ou dans un sac à dos",
+        image:
+          "https://img.freepik.com/vecteurs-libre/bannieres-fanions-rouges-noirs_107791-11697.jpg?t=st=1733241117~exp=1733244717~hmac=c74889600e969fae3830529593b2f30d5c85420ebcf7f78205019e1315a4037f&w=1380",
       },
       {
         id: 5,
@@ -768,6 +776,8 @@
           "Fournir une protection contre le froid, indispensable pour une bonne nuit de sommeil en extérieur",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac de transport compressé, à l'abri de l'humidité",
+        image:
+          "https://img.freepik.com/vecteurs-libre/vector-set-sacs-couchage-bleu-clair-isole-fond-blanc_1284-45481.jpg?t=st=1733241150~exp=1733244750~hmac=849ae85d95344dacc39b5fe23f88fd16ec6526995e177bf34143aef7bca82914&w=996",
       },
       {
         id: 6,
@@ -777,6 +787,8 @@
           "Fixer un abri à des arbres ou à des structures naturelles",
         quantite_eau_necessaire: "Aucune",
         stockage: "Rangés dans une pochette étanche ou accrochés à un sac",
+        image:
+          "https://img.freepik.com/psd-gratuit/3d-mousqueton_602782-235.jpg?t=st=1733241270~exp=1733244870~hmac=86174e863a56ba7a368b6c2d04f73baa829c2a06519834d3552fe93d3844f098&w=740",
       },
       {
         id: 7,
@@ -786,6 +798,8 @@
           "Dormir confortablement et en sécurité, à l'abri des insectes",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac de transport, dans un endroit sec",
+        image:
+          "https://img.freepik.com/photos-gratuite/plan-large-hamac-suspendu-entre-deux-arbres-dans-terrain-herbeux-montagne_181624-33473.jpg?t=st=1733241207~exp=1733244807~hmac=bbb1a116921182f50e05e01e27a308ca35bb853e72b720fab97ddbe12e163d9d&w=1380",
       },
       {
         id: 8,
@@ -795,6 +809,8 @@
           "Créer un abri en milieu neigeux en formant une structure de neige compacte et isolante",
         quantite_eau_necessaire: "Aucune",
         stockage: "Aucun stockage, abri temporaire",
+        image:
+          "https://img.freepik.com/vecteurs-libre/scene-hiver-igloo_1308-38266.jpg?t=st=1733241338~exp=1733244938~hmac=fb9dbc0c65c191df8a81447e1f6b3d8e9d87af453903ea6bf6310a69562c0b5a&w=1060",
       },
       {
         id: 9,
@@ -805,6 +821,8 @@
         quantite_eau_necessaire: "Aucune",
         stockage:
           "Aucun stockage, nécessitant un travail manuel pour la construction",
+        image:
+          "https://img.freepik.com/vecteurs-libre/trou-animal-au-sol-isole-fond-blanc_1308-73575.jpg?t=st=1733241407~exp=1733245007~hmac=3ef154b9df1d35a221c5a6ef18ef7ed956ce5c730955ad3b77cc058ae8f16609&w=1380",
       },
       {
         id: 10,
@@ -814,6 +832,8 @@
           "Abri plus grand, souvent utilisé pour les familles ou les groupes, résistant au vent et à la pluie",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac de transport, à l'abri de l'humidité",
+        image:
+          "https://img.freepik.com/vecteurs-libre/ensemble-tentes-touristiques-colorees_1284-17497.jpg?t=st=1733241483~exp=1733245083~hmac=aaa1e3efee0838ba9452984f50b5ed02159ac232e9bd5d4ed4ac8b28c65a409c&w=740",
       },
       {
         id: 11,
@@ -823,6 +843,8 @@
           "Kit contenant les outils nécessaires pour fabriquer un abri à partir de matériaux naturels ou de récupération",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac étanche, à l'abri de la chaleur",
+        image:
+          "https://img.freepik.com/vecteurs-libre/banniere-composition-pictogrammes-travailleur-construction_98292-1781.jpg?t=st=1733241544~exp=1733245144~hmac=38bb95465b829d79c57b301f8ff3bf5d1312315146fe7438adf6c53e6ba1956d&w=740",
       },
       {
         id: 12,
@@ -833,6 +855,8 @@
         quantite_eau_necessaire: "Aucune",
         stockage:
           "Rangé sous forme de branches ou de feuillage, à l'abri des intempéries",
+        image:
+          "https://img.freepik.com/vecteurs-libre/illustration-realiste-ensemble-icones-vectorielles-collection-elements-branche-differentes-tailles_134830-2376.jpg?t=st=1733241637~exp=1733245237~hmac=920e1defe89ea089b9117cdadde6fd769ce9df8d9fb92f95be390d7fd0e9ac8b&w=1380",
       },
       {
         id: 13,
@@ -842,6 +866,8 @@
           "Protège contre le froid et l'humidité en situations d'urgence",
         quantite_eau_necessaire: "Aucune",
         stockage: "Rangé dans un sac compact et étanche",
+        image:
+          "https://img.freepik.com/photos-gratuite/femme-blessee-traitee-par-ambulancier_107420-63770.jpg?t=st=1733241760~exp=1733245360~hmac=8334538d42ea17205179d2240668c21f0f1dd7048ab0fda44d715c285266512d&w=1380",
       },
       {
         id: 14,
@@ -851,6 +877,8 @@
           "Construire un abri en utilisant des matériaux trouvés sur place (bûches, feuilles, branches)",
         quantite_eau_necessaire: "Aucune",
         stockage: "Aucun stockage, abri temporaire construit sur le terrain",
+        image:
+          "https://img.freepik.com/vecteurs-libre/maison-bois-tres-mauvais-etat_1308-3322.jpg?t=st=1733241824~exp=1733245424~hmac=10516ebdb8bdb528d1174622d1bd71ca2c9ef59bb481c9dc4b75a41ed62fdec1&w=1380",
       },
       {
         id: 15,
@@ -860,6 +888,8 @@
           "Construire un abri léger en utilisant des filets en toile, adaptés aux environnements tropicaux ou aux zones où il faut se protéger des insectes",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac de transport, à l'abri de l'humidité",
+        image:
+          "https://img.freepik.com/photos-gratuite/textures-tile_1203-2414.jpg?t=st=1733241873~exp=1733245473~hmac=57249801989a8a94245f279c7de813e7859a3a8433f150b062a000db32e48ba2&w=1380",
       },
       {
         id: 16,
@@ -869,6 +899,8 @@
           "Un abri léger et rapide à installer, souvent utilisé dans les situations de survie ou les expéditions",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac de transport, protégé de la chaleur et de l'humidité",
+        image:
+          "https://img.freepik.com/vecteurs-libre/tente-jaune-isole-fond-blanc_1308-118293.jpg?t=st=1733241963~exp=1733245563~hmac=5de6d44f1232dcfa2689c021761a043a3deccc68cfb7d4aaed61315ad32cf0e3&w=1380",
       },
       {
         id: 17,
@@ -878,6 +910,8 @@
           "Utilisée pour suspendre un abri, fixer des branches, ou comme corde pour tout autre besoin de survie",
         quantite_eau_necessaire: "Aucune",
         stockage: "Enroulée et rangée dans un sac étanche",
+        image:
+          "https://img.freepik.com/vecteurs-libre/collection-cordes-realistes_52683-83780.jpg?t=st=1733241991~exp=1733245591~hmac=d7cd76c7645b8f4f66590a4a3c87eb7a0dacfdb2a64cba1497629e5dc5951eb3&w=1380",
       },
       {
         id: 18,
@@ -888,6 +922,8 @@
           "Construire un abri simple et temporaire avec des feuilles, branches et autres matériaux naturels",
         quantite_eau_necessaire: "Aucune",
         stockage: "Aucun stockage, abri à créer sur place",
+        image:
+          "https://img.freepik.com/vecteurs-libre/modele-autocollant-nid-fourmis-fantasy-isole_1308-70282.jpg?t=st=1733242757~exp=1733246357~hmac=29a06f3d7279538c890c5853e54d835bc34af35d134e130d49f7a3531507e1a1&w=900",
       },
       {
         id: 19,
@@ -897,6 +933,8 @@
           "Outils nécessaires pour réparer une tente ou un abri endommagé en cours d'utilisation",
         quantite_eau_necessaire: "Aucune",
         stockage: "Sac étanche, à l'abri de l'humidité",
+        image:
+          "https://img.freepik.com/vecteurs-libre/reparation-du-concept-conception-isometrique-machinaire_1284-21692.jpg?t=st=1733242785~exp=1733246385~hmac=80bb3ccde54b512292cb6aa1786cdc827ea2704c351eadd2fd1d95edcde24bc2&w=740",
       },
       {
         id: 20,
@@ -906,6 +944,8 @@
           "Cacher l'abri ou les mouvements, souvent utilisé dans des environnements où la discrétion est essentielle",
         quantite_eau_necessaire: "Aucune",
         stockage: "Indéfinie",
+        image:
+          "https://img.freepik.com/photos-gratuite/armure-foret-robe-marron_1417-1013.jpg?t=st=1733242819~exp=1733246419~hmac=624fb411d82f6ee57fe066d74d6ef320083c745d536e89d4af9add3352cf21ff&w=1380",
       },
     ],
   },
