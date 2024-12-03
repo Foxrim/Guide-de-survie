@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import AbrisPage from "./pages/AbrisPage";
 import Home from "./pages/Home";
+import SoinsPage from "./pages/SoinsPage";
 
 /* ************************************************************************* */
 
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/abris",
         element: <AbrisPage />,
+      },
+      {
+        path: "/soins",
+        element: <SoinsPage />,
       },
     ],
   },
