@@ -1,86 +1,62 @@
-.Header {
-  display: flex;
-  flex-direction: column;
+@import "../root.css";
+
+:root {
+  --Size-SeparateurHeader: 2px;
 }
 
-.ContainerLogo {
+.Header {
   display: flex;
   justify-content: start;
   align-items: center;
+  width: 100%;
+  background-color: var(--primary-background-color);
+}
+
+.Nav {
+  display: grid;
+  grid-template-columns: 0.5fr var(--Size-SeparateurHeader) 2fr var(
+      --Size-SeparateurHeader
+    );
+  width: 80%;
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  justify-content: end;
+  align-items: end;
+  background-color: var(--secondary-background-color);
+}
+
+/*---------------------------------------*/
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo > a {
+  text-decoration: none;
+}
+
+.Logo > a > h3 {
+  color: var(--primary-color-font);
+  text-decoration: underline;
+}
+
+/*----------------------------------------*/
+
+.SeparateurHeader {
+  background-color: var(--primary-color-font);
+  width: var(--Size-SeparateurHeader);
+  height: 90%;
+  border-radius: 1rem;
 }
 
 .ContainerSlogan {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--primary-color-font);
+  margin: 0rem 0rem 0rem 1rem;
 }
 
 /*-------------------------------------------------*/
-
-.Logo {
-  padding: 0.6em 2em;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255);
-  background: #111;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-  border-radius: 10px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 2rem 0rem 0rem 0rem;
-}
-
-.Logo:before {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing-Logo 20s linear infinite;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-@keyframes glowing-Logo {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-.Logo:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
