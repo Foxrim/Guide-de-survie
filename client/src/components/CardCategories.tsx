@@ -1,8 +1,8 @@
 import "./CardCategories.css";
 
-export default function Card() {
+export default function CardCategories() {
   return (
-    <div className="cardContainer">
+    <div className="cardCategoriesContainer">
       <figure>
         <img src="#" alt="#" />
       </figure>
