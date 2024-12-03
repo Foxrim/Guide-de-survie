@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import HomeMain from "../components/HomeMain";
+import "./Home.css";
 
 function Home() {
   return (
@@ -8,7 +9,7 @@ function Home() {
         <Header />
       </header>
 
-      <main>
+      <main className="PageHomeMain">
         <HomeMain />
       </main>
     </>
