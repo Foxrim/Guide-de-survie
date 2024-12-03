@@ -2,6 +2,15 @@
 
 .cardContainer {
   display: flex;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px 8px var(--secondary-color-font);
+  overflow: hidden;
+}
+
+.cardContainer > a {
+  display: flex;
   flex-direction: column;
   height: 10rem;
   width: 10rem;
@@ -10,7 +19,7 @@
   overflow: hidden;
 }
 
-.cardContainer > figure {
+.cardContainer > a > figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,14 +28,14 @@
   margin: 0;
 }
 
-.cardContainer > figure > img {
+.cardContainer > a > figure > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.cardContainer > div {
+.cardContainer > a > div {
   background-color: var(--tertiary-background-color);
   height: 25%;
   display: flex;
@@ -35,7 +44,7 @@
   padding: 0.5rem;
 }
 
-.cardContainer > div > h3 {
+.cardContainer > a > div > h3 {
   text-align: center;
   color: var(--secondary-color-font);
   margin: 0;

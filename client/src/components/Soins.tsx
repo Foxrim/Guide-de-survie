@@ -9,9 +9,9 @@ export default function Soins() {
 
       <div className="SeparateurHomeMain" />
 
-      <div className="ContainerCardAbrisMain">
-        <section className="cardBack">
-          <div className="cardContainer">
+      <div className="ContainerCardSoinsMain">
+        <section className="cardBackSoins">
+          <div className="cardContainerSoins">
             <h4>
               Traitement des blessures superficielles (coupures, éraflures)
             </h4>
