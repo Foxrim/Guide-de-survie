@@ -10,6 +10,7 @@ import Outils from "./components/Outils";
 import AbrisPage from "./pages/AbrisPage";
 import Home from "./pages/Home";
 import Nourriture from "./pages/Nourriture";
+import SoinsPage from "./pages/SoinsPage";
 
 /* ************************************************************************* */
 
@@ -34,8 +35,12 @@ const router = createBrowserRouter([
         element: <AbrisPage />,
       },
       {
-        path: "/home/outils",
+        path: "/outils",
         element: <Outils />,
+      },
+      {
+        path: "/soins",
+        element: <SoinsPage />,
       },
     ],
   },
