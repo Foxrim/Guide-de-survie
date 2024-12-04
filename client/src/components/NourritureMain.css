@@ -1,24 +1,58 @@
-.Title {
+@import "../root.css";
+
+:root {
+  --Size-SeparateurNourritureMain: 5px;
+}
+.NourritureMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.PageNourriture {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  align-items: center;
 }
-.Description {
+
+.PageNourriture > h2 {
+  color: var(--primary-color-font);
+}
+
+.SeparateurNourriturePage {
+  width: 100%;
+  height: var(--Size-SeparateurNourritureMain);
+  background-color: var(--secondary-color-font);
+}
+
+.ContainerCardNourritureMain {
+  background-color: var(--quatertiary-background-color);
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.cardBackNourriture {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-style: italic;
-  font-size: 1rem;
-  margin: 1rem;
+  align-items: center;
+  height: 90%;
+  width: 100%;
 }
-.Card {
-  margin: 1rem;
-  border: solid;
-  height: 8rem;
-  width: 8rem;
-}
-.Use {
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-  margin: 1rem;
+
+.cardContainerNourriture {
+  height: 90%;
+  width: 90%;
+  background-color: var(--secondary-background-color);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 8px var(--secondary-color-font);
+  padding: 1rem;
+  color: var(--secondary-color-font);
+
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
 }

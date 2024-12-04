@@ -1,68 +1,61 @@
+import { useEffect, useState } from "react";
 import "./AbrisMain.css";
+import CardInfo from "./CardInfo";
+
+type CardProps = {
+  id: number;
+  main_cat: string;
+  nom: string;
+  description: string;
+  materiel_necessaire: string;
+  etapes: string[];
+  duree: string;
+};
+
+const fetchAPI = async (
+  setDataAPI: React.Dispatch<React.SetStateAction<CardProps[]>>,
+) => {
+  try {
+    const response = await fetch("http://localhost:3310/api");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    setDataAPI(data);
+  } catch (error) {
+    console.error("Erreur lors de la récupération des données :", error);
+  }
+};
 
 function AbrisMain() {
+  const [dataAPI, setDataAPI] = useState<CardProps[]>([]);
+
+  useEffect(() => {
+    fetchAPI(setDataAPI);
+  }, []);
+
   return (
     <section className="AbrisMain">
       <div className="PageAbris">
         <h2>Abris</h2>
       </div>
-
       <div className="SeparateurAbrisPage" />
 
-      <section className="ContainerCardAbrisMain">
-        <section className="cardBackAbris">
-          <div className="cardContainerAbris">
-            <h4>Abris Naturel : </h4>
-            <p>
-              Utilise les éléments naturels environnants comme des grottes, des
-              cavités rocheuses, ou des arbres tombés. Ces abris demandent peu
-              ou pas de modification et offrent une bonne protection contre les
-              intempéries.
-            </p>
-            <h4>Tarp Shelter (Abri bâche) :</h4>
-            <p>
-              Un abri simple fait avec une bâche tendue entre deux points à
-              l'aide de cordes. C'est léger, polyvalent, et rapide à installer.
-            </p>
-            <h4>Lean-to Shelter (Abri en appentis) :</h4>
-            <p>
-              Fabriqué avec une structure inclinée de branches ou de poteaux,
-              recouverte de feuillage, d’écorce ou d’une bâche pour se protéger
-              de la pluie et du vent.
-            </p>
-            <h4>Abris en igloo ou en neige :</h4>
-            <p>
-              Dans les environnements enneigés, un abri en neige compactée ou un
-              igloo peut fournir une isolation thermique et protéger du vent
-              glacial.
-            </p>
-            <h4>Abri de débris :</h4>
-            <p>
-              Construit avec des branches et recouvert de feuilles ou de
-              matériaux naturels pour isoler et cacher l’abri. C’est efficace
-              dans les forêts.
-            </p>
-            <h4>Tipi improvisé :</h4>
-            <p>
-              Formé en assemblant des branches ou des poteaux en forme de cône
-              et en les recouvrant de tissu, de feuilles, ou de bâches. Il est
-              stable et offre un bon espace intérieur.
-            </p>
-            <h4>Trou ou tranchée :</h4>
-            <p>
-              Creuser un trou ou une tranchée dans le sol peut offrir une
-              protection contre le vent, avec une couverture en branches ou en
-              feuilles pour camoufler et protéger.
-            </p>
-            <h4>Abri en cabane de fortune :</h4>
-            <p>
-              Construit à partir de matériaux disponibles comme des planches, du
-              plastique ou des palettes récupérées. Il est idéal pour des
-              situations prolongées.
-            </p>
-          </div>
-        </section>
-      </section>
+      <div className="ContainerCardAbrisMain">
+        {/* MAP + filtre */}
+        {dataAPI
+          .filter((data) => data.main_cat === "Abris")
+          .map((data) => (
+            <CardInfo
+              key={data.id}
+              nom={data.nom}
+              description={data.description}
+              materiel_necessaire={data.materiel_necessaire}
+              etapes={data.etapes}
+              duree={data.duree}
+            />
+          ))}
+      </div>
     </section>
   );
 }

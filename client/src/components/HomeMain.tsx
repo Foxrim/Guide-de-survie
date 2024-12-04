@@ -13,13 +13,13 @@ function HomeMain() {
     {
       src: nourriture,
       title: "Nourriture",
-      link: "#",
+      link: "/home/nourriture",
       key: 1,
     },
     {
       src: eau,
       title: "Eau",
-      link: "#",
+      link: "/home/eau",
       key: 2,
     },
     {

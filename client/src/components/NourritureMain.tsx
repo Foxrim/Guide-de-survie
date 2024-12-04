@@ -1,25 +1,63 @@
+import { useEffect, useState } from "react";
 import "./NourritureMain.css";
+import CardInfo from "./CardInfo";
+
+type CardProps = {
+  id: number;
+  main_cat: string;
+  nom: string;
+  description: string;
+  materiel_necessaire: string;
+  etapes: string[];
+  duree: string;
+};
+
+const fetchAPI = async (
+  setDataAPI: React.Dispatch<React.SetStateAction<CardProps[]>>,
+) => {
+  try {
+    const response = await fetch("http://localhost:3310/api");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const data = await response.json();
+    setDataAPI(data);
+  } catch (error) {
+    console.error("Erreur lors de la récupération des données :", error);
+  }
+};
+
 function NourritureMain() {
+  const [dataAPI, setDataAPI] = useState<CardProps[]>([]);
+
+  useEffect(() => {
+    fetchAPI(setDataAPI);
+  }, []);
+
   return (
-    <div className="">
-      <h1 className="Title">La Nourriture</h1>
-      <p className="Description">
-        "La nourriture est un élément essentiel pour survivre dans la nature. Il
-        est important de bien s'alimenter pour avoir de l'énergie et rester en
-        bonne santé."
-      </p>
-
-      <div className="Card">
-        <img className="Picture" src="/" alt="/" />
+    <section className="NourritureMain">
+      <div className="PageNourriture">
+        <h2>Nourriture</h2>
       </div>
+      <div className="SeparateurNourriturePage" />
 
-      <p className="Use">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque
-        accusantium qui, perspiciatis temporibus consequatur blanditiis dolorum
-        vel obcaecati rerum perferendis quod modi numquam veritatis, ipsam
-        officia inventore facere debitis nihil.
-      </p>
-    </div>
+      <div className="ContainerCardNourritureMain">
+        {/* MAP + filtre */}
+        {dataAPI
+          .filter((data) => data.main_cat === "Nourriture")
+          .map((data) => (
+            <CardInfo
+              key={data.id}
+              nom={data.nom}
+              description={data.description}
+              materiel_necessaire={data.materiel_necessaire}
+              etapes={data.etapes}
+              duree={data.duree}
+            />
+          ))}
+      </div>
+    </section>
   );
 }
+
 export default NourritureMain;
