@@ -1,8 +1,8 @@
+import Abris from "../components/Abris";
 import Header from "../components/Header";
-import HomeMain from "../components/HomeMain";
 import "./Home.css";
 
-function Home() {
+export default function AbrisPage() {
   return (
     <>
       <header>
@@ -10,10 +10,8 @@ function Home() {
       </header>
 
       <main className="PageHomeMain">
-        <HomeMain />
+        <Abris />
       </main>
     </>
   );
 }
-
-export default Home;
