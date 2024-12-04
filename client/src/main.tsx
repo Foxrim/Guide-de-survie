@@ -7,9 +7,11 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import AbrisPage from "./pages/AbrisPage";
-import Eau from "./pages/Eau";
+import EauPage from "./pages/EauPage";
 import Home from "./pages/Home";
-import PageNourriture from "./pages/PageNourriture";
+import NourriturePage from "./pages/NourriturePage";
+import OutilsPage from "./pages/OutilsPage";
+import SoinsPage from "./pages/SoinsPage";
 
 /* ************************************************************************* */
 
@@ -24,6 +26,26 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <Home />,
+      },
+      {
+        path: "/home/nourriture",
+        element: <NourriturePage />,
+      },
+      {
+        path: "/home/abris",
+        element: <AbrisPage />,
+      },
+      {
+        path: "/home/outils",
+        element: <OutilsPage />,
+      },
+      {
+        path: "/home/soins",
+        element: <SoinsPage />,
+      },
+      {
+        path: "/home/eau",
+        element: <EauPage />,
       },
     ],
   },

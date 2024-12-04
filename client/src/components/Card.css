@@ -1,26 +1,51 @@
 @import "../root.css";
 
 .cardContainer {
+  display: flex;
   height: 10rem;
   width: 10rem;
-  background-color: var(--secondary-background-color);
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0px 0px;
   box-shadow: 0px 8px var(--secondary-color-font);
+  overflow: hidden;
+}
 
-  figure {
-    height: 80%;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.cardContainer > a {
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10px 10px 0px 0px;
+  box-shadow: 0px 8px var(--secondary-color-font);
+  overflow: hidden;
+}
 
-  div {
-    background-color: var(--tertiary-background-color);
-    h3 {
-      text-align: center;
-      color: var(--secondary-color-font);
-    }
-  }
+.cardContainer > a > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75%;
+  margin: 0;
+}
+
+.cardContainer > a > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.cardContainer > a > div {
+  background-color: var(--tertiary-background-color);
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.cardContainer > a > div > h3 {
+  text-align: center;
+  color: var(--secondary-color-font);
+  margin: 0;
 }

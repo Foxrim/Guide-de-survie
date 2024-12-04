@@ -1,26 +1,26 @@
 @import "../root.css";
 
 :root {
-  --Size-SeparateurHomeMain: 5px;
+  --Size-SeparateurAbrisMain: 5px;
 }
-.HomeMain {
+.AbrisMain {
   display: flex;
   flex-direction: column;
 }
 
-.PageHome {
+.PageAbris {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.PageHome > h2 {
+.PageAbris > h2 {
   color: var(--primary-color-font);
 }
 
-.SeparateurHomeMain {
+.SeparateurAbrisPage {
   width: 100%;
-  height: var(--Size-SeparateurHomeMain);
+  height: var(--Size-SeparateurAbrisMain);
   background-color: var(--secondary-color-font);
 }
 
@@ -31,27 +31,28 @@
   padding: 1.5rem 0;
 }
 
-.cardBack {
+.cardBackAbris {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90%;
   width: 100%;
+}
 
-  .cardContainer {
-    height: 90%;
-    width: 90%;
-    background-color: var(--secondary-background-color);
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0px 8px var(--secondary-color-font);
-    padding: 1rem;
-    color: var(--secondary-color-font);
+.cardContainerAbris {
+  height: 90%;
+  width: 90%;
+  background-color: var(--secondary-background-color);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 8px var(--secondary-color-font);
+  padding: 1rem;
+  color: var(--secondary-color-font);
 
-    h4 {
-      font-size: 20px;
-    }
-    p {
-      margin-bottom: 1rem;
-    }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    margin-bottom: 1rem;
   }
 }

@@ -1,20 +1,26 @@
 import "./CardInfo.css";
 
-export default function CardInfo() {
+interface CardProps {
+  nom: string;
+  description: string;
+  materiel_necessaire: string;
+  etapes: string[];
+  duree: string;
+}
+
+export default function CardInfo(Props: CardProps) {
+  const { nom, description, materiel_necessaire, etapes, duree } = Props;
   return (
     <section className="cardBack">
       <div className="cardContainer">
-        <h4>nom</h4>
-        <p>description</p>
-        <p>Matériel nécéssaire :</p>
-        <p>materiel_necessaire</p>
-        <p>Etapes :</p>
-        <p>etapes[0]</p>
-        <p>etapes[1]</p>
-        <p>etapes[2]</p>
-        <p>etapes[3]</p>
-        <p>etapes[4]</p>
-        <p>Durée : duree </p>
+        <h4>{nom}</h4>
+        <p>{description}</p>
+        <h4>Matériel nécéssaire :</h4>
+        <p>{materiel_necessaire}</p>
+        <h4>Etapes :</h4>
+        <p>{etapes}</p>
+        <h4>Durée :</h4>
+        <p>{duree}</p>
       </div>
     </section>
   );

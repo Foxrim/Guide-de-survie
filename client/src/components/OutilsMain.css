@@ -1,0 +1,58 @@
+@import "../root.css";
+
+:root {
+  --Size-SeparateurOutilsMain: 5px;
+}
+.OutilsMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.PageOutils {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.PageOutils > h2 {
+  color: var(--primary-color-font);
+}
+
+.SeparateurOutilsPage {
+  width: 100%;
+  height: var(--Size-SeparateurOutilsMain);
+  background-color: var(--secondary-color-font);
+}
+
+.ContainerCardOutilsMain {
+  background-color: var(--quatertiary-background-color);
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.cardBackOutils {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+.cardContainerOutils {
+  height: 90%;
+  width: 90%;
+  background-color: var(--secondary-background-color);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 8px var(--secondary-color-font);
+  padding: 1rem;
+  color: var(--secondary-color-font);
+
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+}

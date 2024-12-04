@@ -1,17 +1,19 @@
-import Abris from "../components/Abris";
+import AbrisMain from "../components/AbrisMain";
 import Header from "../components/Header";
-import "./Home.css";
+import "./AbrisPage.css";
 
-export default function AbrisPage() {
+function AbrisPage() {
   return (
     <>
       <header>
         <Header />
       </header>
 
-      <main className="PageHomeMain">
-        <Abris />
+      <main className="PageAbrisMain">
+        <AbrisMain />
       </main>
     </>
   );
 }
+
+export default AbrisPage;
