@@ -7,8 +7,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import AbrisPage from "./pages/AbrisPage";
+import EauPage from "./pages/EauPage";
 import Home from "./pages/Home";
-import Nourriture from "./pages/Nourriture";
+import NourriturePage from "./pages/NourriturePage";
 import OutilsPage from "./pages/OutilsPage";
 import SoinsPage from "./pages/SoinsPage";
 
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/home/nourriture",
-        element: <Nourriture />,
+        element: <NourriturePage />,
       },
       {
         path: "/home/abris",
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/home/soins",
         element: <SoinsPage />,
+      },
+      {
+        path: "/home/eau",
+        element: <EauPage />,
       },
     ],
   },

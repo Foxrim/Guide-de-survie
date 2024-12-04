@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./OutilsMain.css";
+import "./EauMain.css";
 import CardInfo from "./CardInfo";
 
 type CardProps = {
@@ -27,7 +27,7 @@ const fetchAPI = async (
   }
 };
 
-function OutilsMain() {
+function EauMain() {
   const [dataAPI, setDataAPI] = useState<CardProps[]>([]);
 
   useEffect(() => {
@@ -35,16 +35,16 @@ function OutilsMain() {
   }, []);
 
   return (
-    <section className="OutilsMain">
-      <div className="PageOutils">
-        <h2>Outils</h2>
+    <section className="EauMain">
+      <div className="PageEau">
+        <h2>Eau</h2>
       </div>
-      <div className="SeparateurOutilsPage" />
+      <div className="SeparateurEauPage" />
 
-      <div className="ContainerCardOutilsMain">
+      <div className="ContainerCardEauMain">
         {/* MAP + filtre */}
         {dataAPI
-          .filter((data) => data.main_cat === "Outils")
+          .filter((data) => data.main_cat === "Eau")
           .map((data) => (
             <CardInfo
               key={data.id}
@@ -60,4 +60,4 @@ function OutilsMain() {
   );
 }
 
-export default OutilsMain;
+export default EauMain;

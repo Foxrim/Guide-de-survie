@@ -1,17 +1,18 @@
 import Header from "../components/Header";
 import NourritureMain from "../components/NourritureMain";
+import "./NourriturePage.css";
 
-function Nourriture() {
+function NourriturePage() {
   return (
     <>
       <header>
         <Header />
       </header>
-      <main>
+      <main className="PageNourritureMain">
         <NourritureMain />
       </main>
     </>
   );
 }
 
-export default Nourriture;
+export default NourriturePage;

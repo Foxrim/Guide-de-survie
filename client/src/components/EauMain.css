@@ -1,37 +1,37 @@
 @import "../root.css";
 
 :root {
-  --Size-SeparateurSoinsMain: 5px;
+  --Size-SeparateurEauMain: 5px;
 }
-.SoinsMain {
+.EauMain {
   display: flex;
   flex-direction: column;
 }
 
-.PageSoins {
+.PageEau {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.PageSoins > h2 {
+.PageEau > h2 {
   color: var(--primary-color-font);
 }
 
-.SeparateurSoinsPage {
+.SeparateurEauPage {
   width: 100%;
-  height: var(--Size-SeparateurSoinsMain);
+  height: var(--Size-SeparateurEauMain);
   background-color: var(--secondary-color-font);
 }
 
-.ContainerCardSoinsMain {
+.ContainerCardEauMain {
   background-color: var(--quatertiary-background-color);
   height: 100%;
   width: 100%;
   padding: 1.5rem 0;
 }
 
-.cardBackSoins {
+.cardBackEau {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,7 +40,7 @@
   width: 100%;
 }
 
-.cardContainerSoins {
+.cardContainerEau {
   height: 90%;
   width: 90%;
   background-color: var(--secondary-background-color);

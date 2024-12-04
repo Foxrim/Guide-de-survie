@@ -1,5 +1,8 @@
 @import "../root.css";
 
+:root {
+  --Size-SeparateurAbrisMain: 5px;
+}
 .AbrisMain {
   display: flex;
   flex-direction: column;
@@ -17,14 +20,14 @@
 
 .SeparateurAbrisPage {
   width: 100%;
-  height: var(--Size-SeparateurHomeMain);
+  height: var(--Size-SeparateurAbrisMain);
   background-color: var(--secondary-color-font);
 }
 
 .ContainerCardAbrisMain {
   background-color: var(--quatertiary-background-color);
   height: 100%;
-  width: auto;
+  width: 100%;
   padding: 1.5rem 0;
 }
 
